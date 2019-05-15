@@ -4,6 +4,11 @@ const app = express();
 
 app.use(cors());
 
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+})
+
+
 const PORT = 5000;
 
 app.listen(PORT, () => console.log(`listening to port ${PORT}`));
